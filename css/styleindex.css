@@ -1,0 +1,214 @@
+* {
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	/*user-select: none;
+	box-sizing: border-box;*/
+	font-family: sans-serif;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.upper
+{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	width: 100%;
+	max-height: 300px;
+	background: #1e1e1e;
+}
+p
+{
+	padding-top: 5%;
+	font-family: Times New Roman;
+	font-size: 45px;
+	letter-spacing: 2px;
+	color: white;
+	line-height: 33px;
+}
+
+.logo
+{
+
+	width: 120px;
+	height: 120px;
+}
+
+.quote
+{
+	width: 350px;
+	height: 40px;
+}
+
+.navmenu
+{
+	background: #45B34B;
+	padding: 10px;
+	display: block;
+}
+
+.navmenu ul
+{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.navmenu > ul li
+{
+	display: inline-block;
+	position: relative;
+}
+
+.navmenu > ul li a
+{	
+	display: inline-block;
+	padding: 5px 40px;
+	color: white;
+	text-decoration: none;
+}
+.navmenu > ul li ul li a
+{
+	padding: 0px;
+}
+
+.navmenu > ul a:hover
+{
+	text-decoration: underline;
+	text-shadow: -.25px -.25px 0 white, 
+                .25px .25px white;
+}
+
+.navmenu > ul li ul li:hover
+{
+	background: rgba(0, 0, 0, 0.02);
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #45B34B;
+}
+
+.navmenu > ul li ul li a:hover
+{
+	text-shadow: -.25px -.25px 0 black, 
+                .25px .25px black;
+    text-decoration: none;
+}
+
+#sub-menu-1
+{
+	background: white;
+	position: absolute;
+	left: -25px;
+	width: 220px;
+	height: 0px;
+	font-size: 14px;
+	line-height: 50px;
+	visibility: hidden;
+	transition: 0.4s;
+
+}
+
+#sub-menu-1 li a
+{
+	color: black;
+}
+
+#sub-menu-1 li
+{
+	display: block;
+}
+
+.navmenu > ul li:hover #sub-menu-1
+{
+	height: 250px;
+	visibility: visible;
+}
+
+#sub-submenu-1
+{
+	background: white;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	width: 220px;
+	height: 250px;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+#sub-submenu-1 li
+{
+	display: block;
+}
+
+#sub-menu-1 li:hover #sub-submenu-1
+{
+	left: 225px;
+	width: 220px;
+	height: 250px;
+	visibility: visible;
+}
+
+#sub-submenu-2
+{
+	background: white;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	width: 220px;
+	height: 250px;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+#sub-submenu-2 li
+{
+	line-height: 25px;
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+}
+
+#sub-menu-1 li:hover #sub-submenu-2
+{
+	left: 225px;
+	width: 220px;
+	height: 250px;
+	visibility: visible;
+}
+
+#sub-menu-2 li a
+{
+	color: black;
+}
+
+#sub-menu-2 li
+{
+	display: block;
+}
+
+
+#sub-menu-2	
+{
+	background: white;
+	position: absolute;
+	left: -25px;
+	width: 220px;
+	height: 0px;
+	font-size: 14px;
+	line-height: 50px;
+	visibility: hidden;
+	transition: 0.4s;
+}
+
+.navmenu > ul li:hover #sub-menu-2
+{
+	height: 250px;
+	visibility: visible;
+}
